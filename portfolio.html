@@ -1,0 +1,385 @@
+{% extends 'base.html' %}
+
+{% block title %}Portfolio - Saad Amin{% endblock %}
+
+{% block content %}
+<!-- Portfolio Hero Section -->
+<section class="page-header">
+    <div class="container">
+        <h1 data-aos="fade-up">My Portfolio</h1>
+    </div>
+</section>
+
+<!-- Portfolio Filter Section -->
+<section class="portfolio-section">
+    <div class="container">
+        <div class="portfolio-filter" data-aos="fade-up">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="logo">Logo Design</button>
+            <button class="filter-btn" data-filter="social">Social Media</button>
+            <button class="filter-btn" data-filter="flyer">Flyers</button>
+            <button class="filter-btn" data-filter="poster">Posters</button>
+            <button class="filter-btn" data-filter="thumbnail">YouTube Thumbnails</button>
+            <button class="filter-btn" data-filter="business-card">Business Cards</button>
+        </div>
+        
+        <div class="portfolio-grid">
+            <!-- Logo Design Projects -->
+            <div class="portfolio-item logo" data-aos="fade-up" data-aos-delay="100">
+                <div class="portfolio-category">Logo</div>
+                <div class="portfolio-image">
+                    <div style="background-color: #3498db; width: 100%; height: 100%; display: flex; justify-content: center; align-items: center; color: white; font-size: 24px; font-weight: bold;">Logo Design 1</div>
+                </div>
+                <div class="portfolio-overlay">
+                    <h3>Tech Company Logo</h3>
+                    <p>Modern and minimalist logo design for a technology startup</p>
+                </div>
+            </div>
+            
+            <div class="portfolio-item logo" data-aos="fade-up" data-aos-delay="150">
+                <div class="portfolio-category">Logo</div>
+                <div class="portfolio-image">
+                    <div style="background-color: #9b59b6; width: 100%; height: 100%; display: flex; justify-content: center; align-items: center; color: white; font-size: 24px; font-weight: bold;">Logo Design 2</div>
+                </div>
+                <div class="portfolio-overlay">
+                    <h3>Cafe Logo</h3>
+                    <p>Elegant and inviting logo for a local coffee shop</p>
+                </div>
+            </div>
+            
+            <div class="portfolio-item logo" data-aos="fade-up" data-aos-delay="200">
+                <div class="portfolio-category">Logo</div>
+                <div class="portfolio-image">
+                    <div style="background-color: #1abc9c; width: 100%; height: 100%; display: flex; justify-content: center; align-items: center; color: white; font-size: 24px; font-weight: bold;">Logo Design 3</div>
+                </div>
+                <div class="portfolio-overlay">
+                    <h3>Fitness Brand Logo</h3>
+                    <p>Dynamic and energetic logo for a fitness brand</p>
+                </div>
+            </div>
+            
+            <!-- Social Media Projects -->
+            <div class="portfolio-item social" data-aos="fade-up" data-aos-delay="250">
+                <div class="portfolio-category">Social Media</div>
+                <div class="portfolio-image">
+                    <div style="background-color: #e74c3c; width: 100%; height: 100%; display: flex; justify-content: center; align-items: center; color: white; font-size: 24px; font-weight: bold;">Instagram Post</div>
+                </div>
+                <div class="portfolio-overlay">
+                    <h3>Product Launch Post</h3>
+                    <p>Engaging social media content for a new product launch</p>
+                </div>
+            </div>
+            
+            <div class="portfolio-item social" data-aos="fade-up" data-aos-delay="300">
+                <div class="portfolio-category">Social Media</div>
+                <div class="portfolio-image">
+                    <div style="background-color: #f39c12; width: 100%; height: 100%; display: flex; justify-content: center; align-items: center; color: white; font-size: 24px; font-weight: bold;">Facebook Post</div>
+                </div>
+                <div class="portfolio-overlay">
+                    <h3>Promotional Campaign</h3>
+                    <p>Series of posts for a seasonal promotional campaign</p>
+                </div>
+            </div>
+            
+            <div class="portfolio-item social" data-aos="fade-up" data-aos-delay="350">
+                <div class="portfolio-category">Social Media</div>
+                <div class="portfolio-image">
+                    <div style="background-color: #d35400; width: 100%; height: 100%; display: flex; justify-content: center; align-items: center; color: white; font-size: 24px; font-weight: bold;">Social Media Kit</div>
+                </div>
+                <div class="portfolio-overlay">
+                    <h3>Brand Social Kit</h3>
+                    <p>Comprehensive social media kit for consistent brand presence</p>
+                </div>
+            </div>
+            
+            <!-- Flyer Projects -->
+            <div class="portfolio-item flyer" data-aos="fade-up" data-aos-delay="400">
+                <div class="portfolio-category">Flyer</div>
+                <div class="portfolio-image">
+                    <div style="background-color: #2ecc71; width: 100%; height: 100%; display: flex; justify-content: center; align-items: center; color: white; font-size: 24px; font-weight: bold;">Event Flyer</div>
+                </div>
+                <div class="portfolio-overlay">
+                    <h3>Music Festival Flyer</h3>
+                    <p>Vibrant flyer design for an annual music festival</p>
+                </div>
+            </div>
+            
+            <div class="portfolio-item flyer" data-aos="fade-up" data-aos-delay="450">
+                <div class="portfolio-category">Flyer</div>
+                <div class="portfolio-image">
+                    <div style="background-color: #27ae60; width: 100%; height: 100%; display: flex; justify-content: center; align-items: center; color: white; font-size: 24px; font-weight: bold;">Sale Flyer</div>
+                </div>
+                <div class="portfolio-overlay">
+                    <h3>Seasonal Sale Flyer</h3>
+                    <p>Eye-catching flyer for a retail store's seasonal sale</p>
+                </div>
+            </div>
+            
+            <!-- YouTube Thumbnail Projects -->
+            <div class="portfolio-item thumbnail" data-aos="fade-up" data-aos-delay="500">
+                <div class="portfolio-category">Thumbnail</div>
+                <div class="portfolio-image">
+                    <div style="background-color: #e84393; width: 100%; height: 100%; display: flex; justify-content: center; align-items: center; color: white; font-size: 24px; font-weight: bold;">YouTube Thumbnail</div>
+                </div>
+                <div class="portfolio-overlay">
+                    <h3>Tech Review Thumbnail</h3>
+                    <p>Attention-grabbing thumbnail for a product review video</p>
+                </div>
+            </div>
+            
+            <div class="portfolio-item thumbnail" data-aos="fade-up" data-aos-delay="550">
+                <div class="portfolio-category">Thumbnail</div>
+                <div class="portfolio-image">
+                    <div style="background-color: #fd79a8; width: 100%; height: 100%; display: flex; justify-content: center; align-items: center; color: white; font-size: 24px; font-weight: bold;">YouTube Thumbnail</div>
+                </div>
+                <div class="portfolio-overlay">
+                    <h3>Tutorial Thumbnail</h3>
+                    <p>Clear and instructive thumbnail for an educational video</p>
+                </div>
+            </div>
+            
+            <!-- Business Card Projects -->
+            <div class="portfolio-item business-card" data-aos="fade-up" data-aos-delay="600">
+                <div class="portfolio-category">Business Card</div>
+                <div class="portfolio-image">
+                    <div style="background-color: #0984e3; width: 100%; height: 100%; display: flex; justify-content: center; align-items: center; color: white; font-size: 24px; font-weight: bold;">Business Card</div>
+                </div>
+                <div class="portfolio-overlay">
+                    <h3>Corporate Business Card</h3>
+                    <p>Professional business card design for a corporate executive</p>
+                </div>
+            </div>
+            
+            <div class="portfolio-item business-card" data-aos="fade-up" data-aos-delay="650">
+                <div class="portfolio-category">Business Card</div>
+                <div class="portfolio-image">
+                    <div style="background-color: #74b9ff; width: 100%; height: 100%; display: flex; justify-content: center; align-items: center; color: white; font-size: 24px; font-weight: bold;">Business Card</div>
+                </div>
+                <div class="portfolio-overlay">
+                    <h3>Creative Business Card</h3>
+                    <p>Unique and creative business card for a design studio</p>
+                </div>
+            </div>
+            
+            <!-- Poster Projects -->
+            <div class="portfolio-item poster" data-aos="fade-up" data-aos-delay="700">
+                <div class="portfolio-category">Poster</div>
+                <div class="portfolio-image">
+                    <img src="{{ url_for('static', filename='images/mello-yello-poster.jpg') }}" alt="Mello Yello Poster" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <div class="portfolio-overlay">
+                    <h3>Mello Yello Poster</h3>
+                    <p>Vibrant promotional poster design for Mello Yello beverage</p>
+                </div>
+            </div>
+            
+            <div class="portfolio-item poster" data-aos="fade-up" data-aos-delay="750">
+                <div class="portfolio-category">Poster</div>
+                <div class="portfolio-image">
+                    <img src="{{ url_for('static', filename='images/mello-yello-poster2.jpg') }}" alt="Mello Yello Poster 2" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <div class="portfolio-overlay">
+                    <h3>Mello Yello Alternative Poster</h3>
+                    <p>Alternative promotional poster design with dynamic composition</p>
+                </div>
+            </div>
+            
+            <div class="portfolio-item poster" data-aos="fade-up" data-aos-delay="800">
+                <div class="portfolio-category">Poster</div>
+                <div class="portfolio-image">
+                    <img src="{{ url_for('static', filename='images/rome-poster.jpg') }}" alt="Rome Travel Poster" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <div class="portfolio-overlay">
+                    <h3>Rome Travel Poster</h3>
+                    <p>Vintage-inspired travel poster showcasing Rome's iconic landmarks</p>
+                </div>
+            </div>
+            
+            <div class="portfolio-item poster" data-aos="fade-up" data-aos-delay="850">
+                <div class="portfolio-category">Poster</div>
+                <div class="portfolio-image">
+                    <img src="{{ url_for('static', filename='images/fuji-poster.jpg') }}" alt="Mount Fuji Travel Poster" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <div class="portfolio-overlay">
+                    <h3>Mount Fuji Travel Poster</h3>
+                    <p>Elegant travel poster design featuring Japan's Mount Fuji</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta" style="background-color: var(--primary-color); color: var(--secondary-color); text-align: center; padding: 80px 0;">
+    <div class="container">
+        <h2 data-aos="fade-up">Like what you see?</h2>
+        <p data-aos="fade-up" data-aos-delay="100">Let's work together to create stunning designs for your brand!</p>
+        <a href="{{ url_for('contact') }}" class="btn" style="background-color: var(--accent-color); margin-top: 30px;" data-aos="fade-up" data-aos-delay="200">Get In Touch</a>
+    </div>
+</section>
+{% endblock %}
+
+{% block extra_css %}
+<style>
+    .page-header {
+        background-color: var(--primary-color);
+        color: var(--secondary-color);
+        padding: 100px 0 50px;
+        text-align: center;
+        margin-bottom: 0;
+    }
+    
+    .page-header h1 {
+        margin-bottom: 0;
+    }
+    
+    .portfolio-section {
+        padding: 80px 0;
+    }
+    
+    .portfolio-filter {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-bottom: 50px;
+    }
+    
+    .filter-btn {
+        background: none;
+        border: none;
+        padding: 10px 20px;
+        margin: 0 5px 10px;
+        font-size: 1rem;
+        font-weight: 500;
+        cursor: pointer;
+        transition: var(--transition);
+        border-radius: 30px;
+        background-color: var(--light-gray);
+    }
+    
+    .filter-btn:hover,
+    .filter-btn.active {
+        background-color: var(--primary-color);
+        color: var(--secondary-color);
+    }
+    
+    .portfolio-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 30px;
+    }
+    
+    .portfolio-item {
+        position: relative;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .portfolio-item:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    }
+    
+    .portfolio-category {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        background-color: var(--primary-color);
+        color: var(--secondary-color);
+        padding: 5px 10px;
+        border-radius: 20px;
+        font-size: 0.8rem;
+        z-index: 2;
+    }
+    
+    .portfolio-image {
+        width: 100%;
+        height: 250px;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .portfolio-overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+        padding: 20px;
+        color: white;
+        transform: translateY(0);
+        transition: transform 0.3s ease;
+    }
+    
+    .portfolio-overlay h3 {
+        margin: 0 0 5px 0;
+        font-size: 1.2rem;
+    }
+    
+    .portfolio-overlay p {
+        margin: 0;
+        font-size: 0.9rem;
+        opacity: 0.9;
+    }
+    
+    .portfolio-item.hidden {
+        opacity: 0;
+        transform: scale(0.8);
+        transition: all 0.3s ease;
+    }
+    
+    .cta p {
+        font-size: 1.2rem;
+        max-width: 600px;
+        margin: 0 auto 30px;
+    }
+    
+    @media screen and (max-width: 768px) {
+        .portfolio-grid {
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        }
+    }
+</style>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Portfolio filtering
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const portfolioItems = document.querySelectorAll('.portfolio-item');
+        
+        filterButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                // Remove active class from all buttons
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                // Add active class to clicked button
+                this.classList.add('active');
+                
+                const filterValue = this.getAttribute('data-filter');
+                
+                portfolioItems.forEach(item => {
+                    if (filterValue === 'all') {
+                        item.style.display = 'block';
+                        setTimeout(() => {
+                            item.classList.remove('hidden');
+                        }, 10);
+                    } else if (item.classList.contains(filterValue)) {
+                        item.style.display = 'block';
+                        setTimeout(() => {
+                            item.classList.remove('hidden');
+                        }, 10);
+                    } else {
+                        item.classList.add('hidden');
+                        setTimeout(() => {
+                            item.style.display = 'none';
+                        }, 300);
+                    }
+                });
+            });
+        });
+    });
+</script>
+{% endblock %}
