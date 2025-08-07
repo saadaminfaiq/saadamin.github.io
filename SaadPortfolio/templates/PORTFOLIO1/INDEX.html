@@ -1,0 +1,218 @@
+{% extends 'base.html' %}
+
+{% block title %}About Me - Saad Amin{% endblock %}
+
+{% block content %}
+<!-- About Hero Section -->
+<section class="page-header">
+    <div class="container">
+        <h1 data-aos="fade-up">About Me</h1>
+    </div>
+</section>
+
+<!-- About Main Section -->
+<section class="about">
+    <div class="container">
+        <div class="about-content">
+            <div class="about-image" data-aos="fade-right">
+                <img src="{{ url_for('static', filename='images/saad-portrait.jpg') }}" alt="Saad Amin Portrait" style="width: 100%; height: auto; border-radius: 10px; box-shadow: var(--box-shadow);">
+            </div>
+            <div class="about-text" data-aos="fade-left">
+                <h2>Hi, I'm Saad Amin</h2>
+                <p>I am a passionate graphic designer with a keen eye for detail and a creative mindset. My journey in graphic design began with a fascination for visual communication and has evolved into a professional career creating impactful designs for clients across various industries.</p>
+                <p>With several years of experience in the field, I've developed expertise in creating visually stunning designs that help businesses stand out in today's competitive market. I believe that great design is not just about aesthetics but also about effectively communicating messages and solving problems.</p>
+                <p>My approach combines creativity with strategic thinking to deliver designs that not only look great but also achieve your business objectives. I work closely with my clients to understand their vision and bring it to life through thoughtful and purposeful design.</p>
+                <div class="skills">
+                    <span class="skill-tag">Logo Design</span>
+                    <span class="skill-tag">Social Media Posts</span>
+                    <span class="skill-tag">Flyers</span>
+                    <span class="skill-tag">YouTube Thumbnails</span>
+                    <span class="skill-tag">Business Cards</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- My Approach Section -->
+<section class="approach" style="background-color: var(--light-gray);">
+    <div class="container">
+        <div class="section-title" data-aos="fade-up">
+            <h2>My Approach</h2>
+        </div>
+        <div class="approach-grid">
+            <div class="approach-item" data-aos="fade-up" data-aos-delay="100">
+                <div class="approach-icon">
+                    <i class="fas fa-comments"></i>
+                </div>
+                <h3>1. Understand</h3>
+                <p>I begin by thoroughly understanding your brand, target audience, and project goals to ensure the design aligns with your vision.</p>
+            </div>
+            <div class="approach-item" data-aos="fade-up" data-aos-delay="200">
+                <div class="approach-icon">
+                    <i class="fas fa-lightbulb"></i>
+                </div>
+                <h3>2. Ideate</h3>
+                <p>Next, I brainstorm creative concepts and ideas, exploring different directions to find the perfect solution for your needs.</p>
+            </div>
+            <div class="approach-item" data-aos="fade-up" data-aos-delay="300">
+                <div class="approach-icon">
+                    <i class="fas fa-pencil-alt"></i>
+                </div>
+                <h3>3. Create</h3>
+                <p>I then bring the chosen concept to life, crafting detailed designs with attention to every element and ensuring visual harmony.</p>
+            </div>
+            <div class="approach-item" data-aos="fade-up" data-aos-delay="400">
+                <div class="approach-icon">
+                    <i class="fas fa-sync-alt"></i>
+                </div>
+                <h3>4. Refine</h3>
+                <p>Based on your feedback, I refine and perfect the design until it exceeds your expectations and achieves your goals.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Why Choose Me Section -->
+<section class="why-choose">
+    <div class="container">
+        <div class="section-title" data-aos="fade-up">
+            <h2>Why Choose Me</h2>
+        </div>
+        <div class="why-choose-content">
+            <div class="why-choose-text" data-aos="fade-right">
+                <ul class="why-choose-list">
+                    <li>
+                        <i class="fas fa-check-circle"></i>
+                        <div>
+                            <h3>Personalized Approach</h3>
+                            <p>I take the time to understand your unique needs and tailor my designs specifically to your brand and audience.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fas fa-check-circle"></i>
+                        <div>
+                            <h3>Attention to Detail</h3>
+                            <p>I believe that the smallest details make the biggest difference, ensuring every element of your design is perfect.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fas fa-check-circle"></i>
+                        <div>
+                            <h3>Timely Delivery</h3>
+                            <p>I understand the importance of deadlines and always deliver high-quality work on time.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fas fa-check-circle"></i>
+                        <div>
+                            <h3>Continuous Communication</h3>
+                            <p>I keep you involved throughout the design process, ensuring your vision is realized every step of the way.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="why-choose-image" data-aos="fade-left">
+                <img src="{{ url_for('static', filename='images/saad-portrait.jpg') }}" alt="Saad Amin Design Process" style="width: 100%; height: auto; border-radius: 10px; box-shadow: var(--box-shadow); transform: scaleX(-1); filter: brightness(0.8) contrast(1.2);">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta" style="background-color: var(--primary-color); color: var(--secondary-color); text-align: center; padding: 80px 0;">
+    <div class="container">
+        <h2 data-aos="fade-up">Ready to bring your ideas to life?</h2>
+        <p data-aos="fade-up" data-aos-delay="100">Let's collaborate and create something amazing together!</p>
+        <div class="cta-buttons" data-aos="fade-up" data-aos-delay="200">
+            <a href="{{ url_for('portfolio') }}" class="btn" style="margin-right: 15px;">View My Work</a>
+            <a href="{{ url_for('contact') }}" class="btn" style="background-color: var(--accent-color);">Contact Me</a>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block extra_css %}
+<style>
+    .page-header {
+        background-color: var(--primary-color);
+        color: var(--secondary-color);
+        padding: 100px 0 50px;
+        text-align: center;
+        margin-bottom: 0;
+    }
+    
+    .page-header h1 {
+        margin-bottom: 0;
+    }
+    
+    .approach-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 30px;
+        margin-top: 50px;
+    }
+    
+    .approach-item {
+        text-align: center;
+        padding: 30px;
+        background-color: var(--secondary-color);
+        border-radius: 10px;
+        box-shadow: var(--box-shadow);
+        transition: var(--transition);
+    }
+    
+    .approach-item:hover {
+        transform: translateY(-10px);
+    }
+    
+    .approach-icon {
+        font-size: 2.5rem;
+        color: var(--accent-color);
+        margin-bottom: 20px;
+    }
+    
+    .why-choose-content {
+        display: flex;
+        align-items: center;
+        gap: 50px;
+        margin-top: 50px;
+    }
+    
+    .why-choose-list {
+        list-style: none;
+    }
+    
+    .why-choose-list li {
+        display: flex;
+        margin-bottom: 30px;
+    }
+    
+    .why-choose-list i {
+        color: var(--accent-color);
+        font-size: 1.5rem;
+        margin-right: 20px;
+        margin-top: 5px;
+    }
+    
+    .why-choose-list h3 {
+        margin-bottom: 10px;
+    }
+    
+    .cta p {
+        font-size: 1.2rem;
+        max-width: 600px;
+        margin: 0 auto 30px;
+    }
+    
+    @media screen and (max-width: 992px) {
+        .why-choose-content {
+            flex-direction: column;
+        }
+        
+        .why-choose-image {
+            order: -1;
+        }
+    }
+</style>
+{% endblock %}
